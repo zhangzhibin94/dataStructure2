@@ -63,6 +63,14 @@ public class ArrayUtils<T> {
             }
         }
     }
+    //数组头部添加一个元素t
+    public void addFirst(T t){
+        splice(0, t);
+    }
+    //数组末尾插入一个元素t
+    public void addLast(T t){
+        splice(size,t);
+    }
 
     //数组是否为空
     public Boolean getIsEmpty(){
